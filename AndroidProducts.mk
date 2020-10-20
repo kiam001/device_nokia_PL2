@@ -15,10 +15,17 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_PL2.mk
+    $(LOCAL_DIR)/lineage_PL2.mk \
+    $(LOCAL_DIR)/arrow_PL2.mk \
+    $(LOCAL_DIR)/revengeos_PL2.mk
 
 COMMON_LUNCH_CHOICES := \
     lineage_PL2-eng \
     lineage_PL2-user \
-    lineage_PL2-userdebug
-
+    lineage_PL2-userdebug \
+    arrow_PL2-eng \
+    arrow_PL2-user \
+    arrow_PL2-userdebug \
+    revengeos_PL2-eng \
+    revengeos_PL2-user \
+    revengeos_PL2-userdebug
