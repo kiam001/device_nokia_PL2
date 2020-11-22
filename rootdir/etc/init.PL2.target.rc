@@ -2,6 +2,13 @@ on boot
     # Fingerprint
     chown system system /dev/elan_fp
     chmod 0644 /dev/elan_fp
+    setprop vendor.usb.rndis.func.name "rndis_bam"
+    setprop vendor.usb.rmnet.func.name "rmnet_bam"
+    setprop vendor.usb.rmnet.inst.name "rmnet"
+    setprop vendor.usb.dpl.inst.name "dpl"
+    setprop vendor.usb.qdss.inst.name "qdss"
+    write /sys/module/usb_f_qcrndis/parameters/rndis_dl_max_xfer_size 15916
+    setprop sys.usb.configfs 1
 
 on post-fs-data
     # NFC storage
@@ -47,11 +54,3 @@ on property:ro.boot.simslot=1
 
 on property:ro.boot.simslot=2
     setprop persist.radio.multisim.config dsds
-    # USB Tethering
-    setprop vendor.usb.rndis.func.name "rndis_bam"
-    setprop vendor.usb.rmnet.func.name "rmnet_bam"
-    setprop vendor.usb.rmnet.inst.name "rmnet"
-    setprop vendor.usb.dpl.inst.name "dpl"
-    setprop vendor.usb.qdss.inst.name "qdss"
-    write /sys/module/usb_f_qcrndis/parameters/rndis_dl_max_xfer_size 15916
-    setprop sys.usb.configfs 1
