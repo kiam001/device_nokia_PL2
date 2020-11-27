@@ -1,2 +1,5 @@
 # NFC
 type sec_device, dev_type;
+
+#patch
+type persist_file, file_type;
