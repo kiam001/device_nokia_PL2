@@ -19,7 +19,9 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/arrow_PL2.mk \
     $(LOCAL_DIR)/revengeos_PL2.mk \
     $(LOCAL_DIR)/aosp_PL2.mk \
-    $(LOCAL_DIR)/pixys_PL2.mk
+    $(LOCAL_DIR)/pixys_PL2.mk \
+    $(LOCAL_DIR)/omni_PL2.mk
+
 
 COMMON_LUNCH_CHOICES := \
     lineage_PL2-eng \
@@ -36,4 +38,7 @@ COMMON_LUNCH_CHOICES := \
     aosp_PL2-userdebug \
     pixys_PL2-eng \
     pixys_PL2-user \
-    pixys_PL2-userdebug
+    pixys_PL2-userdebug \
+    omni_PL2-eng \
+    omni_PL2-user \
+    omni_PL2-userdebug
